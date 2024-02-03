@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Connect</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+      <a href="Home.html" style="text-decoration: none; color: white;">Campus Connect</a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-xmark" onclick="hidemenu()"></i>
+        <ul>
+          <li><a href="login.jsp">ADMIN PANEL</a></li>
+          
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+    <div class="text-box">
+      <h1>Your Voice Matters</h1>
+      <p>
+        Report incidents, share college experiences, and make informed choices for your future. <br />Be Quick!
+      </p>
+      <a href="login.jsp" class="hero-btn">Report Incident</a>
+    </div>
+  </section>
+
+  <!------- course ------>
+  <section class="course">
+    <h1>Report an Incident</h1>
+    <p>
+      Help us create a safer and more transparent college environment.<br><br>
+      Steps to Report an incident. 2 Easy Steps to Report....
+    </p>
+    <div class="row">
+      <div class="course-col">
+        <h3>Step 1</h3>
+        <p>
+          Step 1:Student will login to respective account.If don't have an account, student will register.
+        </p>
+      </div>
+      <div class="course-col">
+        <h3>Step 2</h3>
+        <p>
+          Step 2:Fill the Incident form & Submit.<br> Note:Student should enter detailed incident information.
+        </p>
+      </div>
+    </div>
+    <a href="login.jsp" class="hero-btn" style="color: black;border: 2px solid black;">Report Incident</a>
+  </section>
+
+  <!-- Campus -->
+  <section class="campus" style="background-color: rgb(234, 217, 244);">
+    <h1>Review your College</h1>
+    <p>Welcome to our platform, where students share their experiences and insights about universities</p>
+
+    <div class="row">
+      <div class="campus-col">
+        <img src="img/time.jpg" alt="img" />
+        <div class="layer">
+          <h3>Do Review at anytime</h3>
+        </div>
+      </div>
+      <div class="campus-col">
+        <img src="img/place.jpg" alt="img" />
+        <div class="layer" id="layer2">
+          <h3>Do Review from Anywhere</h3>
+        </div>
+      </div>
+      <div class="campus-col">
+        <img src="img/college.jpg" alt="img" />
+        <div class="layer" id="layer3">
+          <h3>Share your thoughts about college.</h3>
+        </div>
+      </div>
+    </div>
+    <a href="login.jsp" class="hero-btn" style="color: black;border: 2px solid black;">Do Review</a>
+  </section>
+
+  
+
+  <section class="cta">
+    <h1>SingUp to make Report incidents, share college experiences</h1>
+    <a href="" class="hero-btn" >Sign Up</a>
+  </section>
+
+  <!-- ------------------Footer-------------------- -->
+  <footer>
+    <div class="container">
+      <!-- <div class="footer-col" id="foot1">
+        <div id="f-lid">
+          <img src="img/univercitylogo.png" alt="">
+        </div>
+        <div id="f-iid">
+          <h5>UNIVERCITY</h5>
+          <p>Lorem ipsum dolor sit amet consectetur</p>
+          <hr>
+          <div class="f1i">
+            <i class="fa fa-copyright"></i>
+            <i class="fa-solid fa-lock"></i>
+            <i class="fa-solid fa-phone"></i>
+            <i class="fa fa-newspaper"></i>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="footer-col">
+        <h5 class="f-inline">FOLLOW US</h5>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+
+      <div class="footer-col" id="support">
+        <h5 class="f-inline">SUPPORT US</h5>
+        <button class="hero-btn red-btn" href="">Support</button>
+      </div>
+
+      <!-- <div class="footer-col" id="link-foot">
+        <h5 class="f-inline">RESOURCES & LINKS</h5>
+        <div id="f-link">
+          <a href="">A</a>
+          <a href="">B</a>
+          <a href="">C</a>
+          <a href="">D</a>
+          <a href="">E</a>
+          <a href="">F</a>
+        </div>
+
+      </div> -->
+
+      <!-- <div class="footer-col">
+        <h5 class="f-inline">VISIT US</h5>
+        <div>
+          <h6>Map & Direction </h6>
+          <h6>Plan Your Visit</h6>
+          <h6>Virtual Tour</h6>
+        </div>
+      </div> -->
+
+      <!-- <div class="footer-col">
+        <h5 class="f-inline">WORK WITH US</h5>
+        <h6>Lorem, ipsum dolor.</h6>
+      </div> -->
+    </div>
+  </footer>
+
+  <!-- script for toggle Menu -->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showmenu() {
+      navLinks.style.right ='0px';
+    }
+    function hidemenu() {
+      navLinks.style.right = "-200px";
+      // navLinks.style.width = "0";
+
+      
+    }
+
+  </script>
+</body>
+
+</html>

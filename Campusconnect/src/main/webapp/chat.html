@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="chat.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <div class="container-Admin-N">
+        <div class="Navigation">
+            <ul>
+                <li>
+                    <a href="UserDashboard.jsp">
+                        <span class="icon-Admin-N"></span>
+                        <span class="title2-Admin-N">CampusConnect</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="UserDashboard.jsp">
+                        <span class="icon-Admin-N"><i class="fa-solid fa-house"></i></span>
+                        <span class="title2-Admin-N">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="registra complaint.html">
+                        <span class="icon-Admin-N"><i class="fa-regular fa-note-sticky"></i></span>
+                        <span class="title2-Admin-N">Register Complaint</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ReviewofU.jsp">
+                        <span class="icon-Admin-N"><i class="fa-regular fa-note-sticky"></i></span>
+                        <span class="title2-Admin-N">Review your college</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="solved-comp.html">
+                        <span class="icon-Admin-N"><i class="fa-regular fa-square-check"></i></span>
+                        <span class="title2-Admin-N">Solved Complaint</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="unsolved.jsp">
+                        <span class="icon-Admin-N"><i class="fa-solid fa-square-xmark"></i></span>
+                        <span class="title2-Admin-N">Unsolved complaint</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="chat.html">
+                        <span class="icon-Admin-N"><i class="fa-brands fa-rocketchat"></i></span>
+                        <span class="title2-Admin-N">Chat Box</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon-Admin-N"><i class="fa-regular fa-user"></i></span>
+                        <span class="title2-Admin-N">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon-Admin-N"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+                        <span class="title2-Admin-N">Log Out </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon-Admin-N"><i class="fa-solid fa-gear"></i></span>
+                        <span class="title2-Admin-N">setting</span>
+                    </a>
+                </li>
+                <li>
+
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="topbar-N">
+                <div class="toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="search-Dash-N">
+                    <label>
+                        <input type="text" placeholder="Search  here">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                </div>
+                <div class="user-Dash-N">
+                    <img src="imgU/profile img2.jpg" alt="">
+                </div>
+            </div>
+
+
+
+            <button class="chatbot-toggler">
+                <span class="material-symbols-rounded">mode_comment</span>
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <div class="chatbot">
+                <header>
+                    <h2>Chatbot</h2>
+                    <span class="close-btn material-symbols-outlined">close</span>
+                </header>
+                <ul class="chatbox">
+                    <li class="chat incoming">
+                        <span class="material-symbols-outlined">smart_toy</span>
+                        <p>Hi there 👋<br>How can I help you today?</p>
+                    </li>
+                </ul>
+                <div class="chat-input">
+                    <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+                    <span id="send-btn" class="material-symbols-rounded">send</span>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let Navigation = document.querySelector('.Navigation');
+        let main = document.querySelector('.main');
+
+
+
+        toggle.onclick = function () {
+            Navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+
+
+
+
+
+
+
+        let list = document.querySelectorAll('.navigation li');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('hovered'));
+            this.classList.add('hovered');
+        }
+        list.forEach((item) =>
+            item.addEventListener('mouseover', activeLink));
+    </script>
+
+</body>
+
+</html>
