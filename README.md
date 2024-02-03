@@ -9,7 +9,7 @@ What I learn while building this project:
   in this project I was handling backend and the admin page in our team.
   ⭐I learn obout how a database works behind, how the connection has to build for data operation,
   how an html form and their fields are connected to back-end.
-  ⭐The sign n page logic...like when the user will get to in after varification their emain and respective password.
+  ⭐The sign n page logic...like when the user will get to in after varification their email and respective password.
 
 
 notice if you are using this code:
